@@ -1,7 +1,7 @@
 function launchRDS() {
   var request = new XMLHttpRequest();
-  var dev_id = ;
-  var access = ;
+  var dev_id = process.env.DEV_ID;
+  var access = process.env.ACCESS;
   var data = 'params=' + 90 + '&access_token=' + access;
   var url = 'https://api.particle.io/v1/devices/' + dev_id + '/setpos/';
   request.open('POST', url, true);
