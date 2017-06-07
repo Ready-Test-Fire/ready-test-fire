@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <title>Ready, Test, FIRE!</title>
+    <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="mocha/mocha.css">
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/theme/solarized.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="mocha/mocha.js"></script>
+    <script src="chai/chai.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="header/header.component.js"></script>
+    <script src="header/header.controller.js"></script>
+    <script src="footer/footer.component.js"></script>
+    <script src="signedOutFrame/signedOutFrame.component.js"></script>
+    <script src="prompts/prompt.component.js"></script>
+    <script src="signOn/signon.component.js"></script>
+    <script src="signOn/signon.controller.js"></script>
+    <script src="tutorial/tutorial.component.js"></script>
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <script src="signedInFrame/signedInFrame.component.js"></script>
+    <script src="codingBlock/codingBlock.component.js"></script>
+    <script src="codingBlock/codingBlock.controller.js"></script>
+</head>
+<body>
+
+    <app-header></app-header>
+    <ui-view></ui-view>
+    <app-footer></app-footer>
+
+
+</body>
+</html>

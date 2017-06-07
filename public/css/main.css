@@ -1,0 +1,173 @@
+header {
+    background: hsl(43,86%,94%);
+    height: 13vh;
+    width: 100vw;
+}
+
+.logo {
+    display: flex;
+    font-family: 'Squada One', cursive;
+    font-size: 11vh;
+    color: hsl(175,58%,39%);
+    margin-left: 5vw;
+
+}
+
+.logo img {
+    height: 11vh;
+    margin-top: 1vh;
+}
+
+.signedOutFrame {
+    height: 84vh;
+    background: hsl(43,86%,94%);
+}
+
+.topHalf {
+    height: 63vh;
+    display: flex;
+}
+
+#prompt {
+    width: 20%;
+    border: .5vw solid hsl(44,41%,88%);
+    font-family: 'Squada One', cursive;
+    background: hsl(43,86%,94%);
+}
+
+#prompt h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 9vh;
+}
+
+#prompt h4 {
+    font-family: 'Squada One', cursive;
+    font-size: 4vh;
+    margin: 1vh 0;
+    color: hsl(359,53%,56%);
+}
+
+#codingBlock {
+    width:80%;
+    border: .5vw solid hsl(44,41%,88%);
+    display: flex;
+}
+
+.codingArea {
+    width: 75%;
+    height: 100%;
+}
+#signOn {
+    width:80%;
+    border: .5vw solid hsl(44,41%,88%);
+}
+footer {
+    background: hsl(43,86%,94%);
+    color: hsl(359,53%,56%);
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    height: 3vh;
+    font-size: 3vh;
+}
+
+.topHalfLarge {
+    height: 84vh;
+    display: flex;
+}
+.CodeMirror {
+    height: 72vh;
+    font-family: 'Squada One', cursive;
+    background: hsl(43,86%,94%);
+}
+
+.signOnForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Squada One', cursive;
+}
+
+.signOnForm h1 {
+    font-size: 11vh;
+}
+.tutorial {
+    font-family: 'Squada One', cursive;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.signOnButton {
+    font-family: 'Squada One', cursive;
+    font-size: 4vh;
+    background: hsl(175,58%,39%);
+    border: none;
+    border-radius: 10px;
+    margin-top: 2vh;
+    outline: 0;
+}
+
+.signOnForm input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: hsl(45,100%,35%);
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.signOnForm input:focus {
+    outline: 0;
+    border-color: #87BA8D;
+}
+
+#mocha {
+    font-family: 'Squada One', cursive;
+    width: 25%;
+    height: 98%;
+    border: .5vw solid hsl(44,41%,88%);
+    margin: 0;
+    background: hsl(43,86%,94%);
+}
+
+.cm-string {
+    color: hsl(175,58%,39%);
+}
+
+
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+    background: hsl(44,41%,88%);
+}
+
+.testButton {
+    font-family: 'Squada One', cursive;
+    background: hsl(175,58%,39%);
+    border: none;
+    border-radius: 10px;
+    font-size: 4vh;
+    height: 4.1vh;
+    outline: 0;
+}
+
+.codingArea label {
+    font-family: 'Squada One', cursive;
+    background: hsl(46, 41%, 88%);
+    border: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 6vh;
+}
+
+.submitArea {
+    background: hsl(46, 41%, 88%);
+    display: flex;
+    justify-content: center;
+}

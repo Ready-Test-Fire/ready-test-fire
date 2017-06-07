@@ -1,0 +1,16 @@
+
+
+<form class="codingArea">
+    <div>
+        <label for="codeBlock">Code Block</label>
+        <textarea ng-model='codeBlock' id="codeBlock" class="codemirror-textarea form-control"></textarea>
+    </div>
+
+    <div class="submitArea">
+        <button ng-click="$ctrl.runTest()" class="testButton">
+            Submit Code!
+        </button>
+    </div>
+
+</form>
+<div id="mocha"></div>
