@@ -8,9 +8,6 @@
 
     function signOnController() {
         console.log('signOn controller is working')
-
         const vm = this
-
-
     }
 })()
