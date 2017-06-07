@@ -18,7 +18,7 @@
                 component: 'signedOutFrame',
             })
             .state('game', {
-                url: '/start',
+                url: '/start/:questionid',
                 component: 'signedInFrame'
             })
         // etc...

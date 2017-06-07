@@ -6,9 +6,21 @@
         <textarea ng-model='codeBlock' id="codeBlock" class="codemirror-textarea form-control"></textarea>
     </div>
 
-    <div class="submitArea">
+    <div class="submitArea" ng-show="$ctrl.isFalse()">
         <button ng-click="$ctrl.runTest()" class="testButton">
             Submit Code!
+        </button>
+    </div>
+
+    <div class="submitArea" ng-show="$ctrl.isFalse()">
+        <button ng-click="$ctrl.lockRDS()" class="testButton">
+            Reset
+        </button>
+    </div>
+
+    <div class="submitArea" ng-show="$ctrl.isTrue()">
+        <button ng-click="$ctrl.launch()" class="testButton">
+            Launch!
         </button>
     </div>
 
