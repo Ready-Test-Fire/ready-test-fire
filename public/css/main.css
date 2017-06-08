@@ -411,6 +411,12 @@ header {
 .codingArea {
     width: 75%;
     height: 100%;
+    }
+
+.programmingBlock {
+    border: 1px solid rgba(99,202,249,1);
+    box-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 , 0 0 70px #00ffc3;
+
 }
 #signOn {
     width:80%;
@@ -499,6 +505,7 @@ footer {
     border: .5vw solid hsl(44,41%,88%);
     margin: 0;
     background: #333;
+    display: none;
     color: #eee;
     text-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 , 0 0 70px #00ffc3 , 0 0 80px #00fff6 , 0 0 100px #00e9ff ;
 }
@@ -511,12 +518,15 @@ footer {
 .CodeMirror-gutter,
 .CodeMirror-gutters,
 .CodeMirror-linenumber {
-    background: hsl(44,41%,88%);
+    background: #111;
+    color: #fff;
 }
 
 .testButton {
     font-family: 'Squada One', cursive;
-    background: hsl(175,58%,39%);
+    color: #eee;
+    text-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8;
+    background: none;
     border: none;
     border-radius: 10px;
     font-size: 4vh;
@@ -526,7 +536,7 @@ footer {
 
 .codingArea label {
     font-family: 'Squada One', cursive;
-    background: hsl(46, 41%, 88%);
+    background: none;
     border: none;
     width: 100%;
     display: block;
@@ -535,7 +545,6 @@ footer {
 }
 
 .submitArea {
-    background: hsl(46, 41%, 88%);
     display: flex;
     justify-content: center;
 }
@@ -583,3 +592,18 @@ footer {
     text-shadow: 0 0 10px rgba(255,22,10,1) , 0 0 20px rgba(255,90,61,1) , 0 0 30px rgba(242,24,0,1) , 0 0 40px #ff3200 , 0 0 70px #f22800 , 0 0 80px #f44100 , 0 0 100px #ff6430 ;
 }
 
+#results {
+    box-sizing: border-box;
+    height: 50%;
+    width: 25%;
+}
+
+.launchButton {
+    display: none;
+    position: relative;
+    left: -39%;
+    height: 15vw;
+    width: 69vh;
+    margin-top: 24vh;
+    transform: rotate(90deg);
+}

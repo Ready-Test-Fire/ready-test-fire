@@ -8,9 +8,8 @@
 
 
     function codingBlockController($state, $stateParams) {
-        console.log('codingBlock controller is working')
         const vm = this
-        vm.success = false
+        vm.success
 
         const code = $('.codemirror-textarea')[0]
         const editor = CodeMirror.fromTextArea(code, {
@@ -46,8 +45,7 @@
 
 
         vm.submitCode = function() {
-            console.log('here is the code', vm.code)
-            console.log(editor.getValue())
+
         }
 
         vm.testCode = function() {
@@ -63,7 +61,6 @@
         vm.isTrue = function() {
 
             return vm.success === true
-            console.log(vm.success)
         }
 
         vm.isFalse = function() {
@@ -122,7 +119,9 @@
 
             mocha.run(function(failure_count) {
                 vm.success = failure_count ? false : true;
-                console.log(vm.success)
+                if (vm.success) {
+                    $('.launchButton').show()
+                }
             })
             console.log(mocha.run())
 

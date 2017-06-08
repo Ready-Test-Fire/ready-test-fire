@@ -1,28 +1,27 @@
 
 
 <form class="codingArea">
-    <div>
+    <div class="programmingBlock">
         <label for="codeBlock">Code Block</label>
         <textarea ng-model='codeBlock' id="codeBlock" class="codemirror-textarea form-control"></textarea>
     </div>
 
-    <div class="submitArea" ng-show="$ctrl.isFalse()">
+    <div class="submitArea">
         <button ng-click="$ctrl.runTest()" class="testButton">
             Submit Code!
         </button>
     </div>
 
-    <div class="submitArea" ng-show="$ctrl.isFalse()">
-        <button ng-click="$ctrl.lockRDS()" class="testButton">
-            Reset
-        </button>
-    </div>
-
-    <div class="submitArea" ng-show="$ctrl.isTrue()">
-        <button ng-click="$ctrl.launch()" class="testButton">
-            Launch!
-        </button>
-    </div>
 
 </form>
+<div id="results">
+    <div class="failed" ng-show="$ctrl.isFalse()">
+        Test Failed!
+    </div>
+    <button ng-click="$ctrl.launch()" class="launchButton">
+        Launch!
+    </button>
+
+</div>
+
 <div id="mocha"></div>

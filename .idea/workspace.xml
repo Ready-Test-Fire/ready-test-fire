@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002e3bc7-5597-4298-ab6a-c8e82cf1fc4f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/codingBlock/codingBlock.controller.js" afterPath="$PROJECT_DIR$/public/codingBlock/codingBlock.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/codingBlock/codingBlock.html" afterPath="$PROJECT_DIR$/public/codingBlock/codingBlock.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,8 +34,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+            <state relative-caret-position="118">
+              <caret line="9" column="64" lean-forward="false" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -40,8 +44,8 @@
       <file leaf-file-name="codingBlock.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/codingBlock/codingBlock.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="416">
+              <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -50,8 +54,8 @@
       <file leaf-file-name="codingBlock.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/codingBlock/codingBlock.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="113" column="55" lean-forward="true" selection-start-line="113" selection-start-column="55" selection-end-line="113" selection-end-column="55" />
+            <state relative-caret-position="479">
+              <caret line="122" column="45" lean-forward="false" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -60,8 +64,20 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="464" column="142" lean-forward="false" selection-start-line="464" selection-start-column="142" selection-end-line="464" selection-end-column="142" />
+            <state relative-caret-position="530">
+              <caret line="608" column="1" lean-forward="false" selection-start-line="608" selection-start-column="1" selection-end-line="608" selection-end-column="1" />
+              <folding>
+                <marker date="1496958665000" expanded="true" signature="12949:13097" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -109,16 +125,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prompt.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/prompts/prompt.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -138,14 +144,15 @@
         <option value="$PROJECT_DIR$/public/app.config.js" />
         <option value="$PROJECT_DIR$/public/signOn/signon.html" />
         <option value="$PROJECT_DIR$/public/prompts/prompt.component.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/signOn/signon.component.js" />
         <option value="$PROJECT_DIR$/public/prompts/prompt.controller.js" />
         <option value="$PROJECT_DIR$/public/prompts/prompt.html" />
         <option value="$PROJECT_DIR$/public/codingBlock/test.js" />
-        <option value="$PROJECT_DIR$/public/codingBlock/codingBlock.html" />
-        <option value="$PROJECT_DIR$/public/codingBlock/codingBlock.controller.js" />
         <option value="$PROJECT_DIR$/public/header/headerTemplate.html" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/codingBlock/codingBlock.controller.js" />
+        <option value="$PROJECT_DIR$/public/codingBlock/codingBlock.html" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
       </list>
     </option>
@@ -381,7 +388,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16086000" />
+    <option name="totallyTimeSpent" value="19687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="764" extended-state="0" />
@@ -572,30 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/codingBlock/codingBlock.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/codingBlock/codingBlock.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="113" column="55" lean-forward="true" selection-start-line="113" selection-start-column="55" selection-end-line="113" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/signOn/signon.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -612,11 +595,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="9" column="64" lean-forward="false" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/codingBlock/codingBlock.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="122" column="45" lean-forward="false" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/codingBlock/codingBlock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="464" column="142" lean-forward="false" selection-start-line="464" selection-start-column="142" selection-end-line="464" selection-end-column="142" />
-          <folding />
+        <state relative-caret-position="530">
+          <caret line="608" column="1" lean-forward="false" selection-start-line="608" selection-start-column="1" selection-end-line="608" selection-end-column="1" />
+          <folding>
+            <marker date="1496958665000" expanded="true" signature="12949:13097" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
