@@ -73,9 +73,7 @@
             return vm.success === "false"
         }
 
-        // vm.isError = function() {
-        //     return vm.success === "error"
-        // }
+
 
         vm.runTest = function() {
             //Number($stateParams.questionid)
@@ -93,13 +91,11 @@
                 } else if(data.charAt(1) === "F"){
                     console.log("fail");
                     vm.success = "false"
+                    $(".failed").show()
                 } else if(data.charAt(1) === "P"){
                     console.log("pass")
                     //vm.success = "true"
                     $(".launchButton").show()
-                }
-                if (!vm.success) {
-                    $('.failed').show()
                 }
             })
         }
