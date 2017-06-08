@@ -124,6 +124,7 @@
                 vm.success = failure_count ? false : true;
                 console.log(vm.success)
             })
+            console.log(mocha.run())
 
 
         }

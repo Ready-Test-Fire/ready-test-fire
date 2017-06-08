@@ -1,5 +1,351 @@
+@keyframes dot {
+    0% {
+        left: 0.5%;
+        top: -117%
+    }
+    29% {
+        top: -117%
+    }
+    30% {
+        top: 17%
+    }
+    31% {
+        top: 0%
+    }
+    32% {
+        top: 17%
+    }
+    33% {
+        top: 6%
+    }
+    34% {
+        top: 17%
+    }
+    35% {
+        top: 15%
+    }
+    36% {
+        top: 17%
+    }
+    37% {
+        top: 16%
+    }
+    38% {
+        top: 17%
+    }
+    39% {
+        top: 17%
+    }
+    40% {
+        top: 17%
+    }
+    44% {
+        display: none
+    }
+    78% {
+        left: 0.5%;
+        top: 17%
+    }
+    79% {
+        top: -22%;
+        left: 27%
+    }
+    80% {
+        top: -39%;
+        left: 57%
+    }
+    81% {
+        top: -56%;
+        left: 87%
+    }
+    82% {
+        top: -73%;
+        left: 117%
+    }
+    83% {
+        top: -117%;
+    }
+    100% {
+        top:-117%;
+    }
+}
+
+@keyframes bar {
+    0% {
+        opacity: 0
+    }
+    0.1% {
+        top: -117%;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff;
+        transform: rotate(0deg);
+        left: 0%;
+        opacity: 1
+    }
+    40% {
+        top: -117%;
+        transform: rotate(0deg);
+        left: 0%
+    }
+    41% {
+        top: 13%;
+        transform: rotate(0deg);
+        left: 0%;
+        background: #fff
+    }
+    43.9% {
+        opacity: 1
+    }
+    44% {
+        top: 13%;
+        transform: rotate(0deg);
+        left: 0%;
+        display: none;
+        opacity: 0
+    }
+
+    65.9%{
+        opacity: 0
+    }
+    66% {
+        opacity: 1;
+        transform: rotate(106deg);
+        left: 21.2%;
+        top: 59.2%
+    }
+    78% {
+        transform: rotate(106deg);
+        left: 21.2%;
+        top: 59.2%
+    }
+    79% {
+        transform: rotate(160deg);
+        left: 34.7%;
+        top: 46%
+    }
+    89% {
+        opacity: 1;
+        transform: rotate(160deg);
+        left: 34.7%;
+        top: 46%
+    }
+    95% {
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff;
+        transform: rotate(160deg);
+        left: 34.7%;
+        top: 46%
+    }
+    96% {
+        top: -117%
+    }
+    100% {
+        opacity: 0;
+        top: -117%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0
+    }
+    43.9% {
+        opacity: 0
+    }
+    44% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    45%{
+        transform: rotate(5deg);
+        left: 2.1%;
+        bottom: 56.6%
+    }
+    46%{
+        transform: rotate(10deg);
+        left: 3.6%;
+        bottom: 56.3%
+    }
+    47% {
+        transform: rotate(15deg);
+        left: 5.1%;
+        bottom: 55.9%
+    }
+    48% {
+        transform: rotate(20deg);
+        left: 6.6%;
+        bottom: 55%
+    }
+    49% {
+        transform: rotate(25deg);
+        left: 8%;
+        bottom: 54.2%
+    }
+    50% {
+        transform: rotate(30deg);
+        left: 9.4%;
+        bottom: 53%
+    }
+    51% {
+        transform: rotate(40deg);
+        left: 11.8%;
+        bottom: 50%
+    }
+    52% {
+        transform: rotate(45deg);
+        left: 13%;
+        bottom: 48.3%
+    }
+    53% {
+        transform: rotate(50deg);
+        left: 14%;
+        bottom: 46.6%
+    }
+    54% {
+        transform: rotate(55deg);
+        left: 15%;
+        bottom: 44.6%
+    }
+    55% {
+        transform: rotate(60deg);
+        left: 15.7%;
+        bottom: 42.6%
+    }
+    56% {
+        transform: rotate(65deg);
+        left: 16.5%;
+        bottom: 40.2%
+    }
+    57% {
+        transform: rotate(70deg);
+        left: 17%;
+        bottom: 38.1%
+    }
+    58% {
+        transform: rotate(75deg);
+        left: 17.5%;
+        bottom: 35.5%
+    }
+    59% {
+        transform: rotate(80deg);
+        left: 17.9%;
+        bottom: 33.3%
+    }
+    60% {
+        transform: rotate(85deg);
+        left: 18.2%;
+        bottom: 30.6%
+    }
+    61% {
+        transform: rotate(90deg);
+        left: 18.2%;
+        bottom: 28%
+    }
+    62% {
+        transform: rotate(95deg);
+        left: 18.1%;
+        bottom: 25.4%
+    }
+    63% {
+        transform: rotate(100deg);
+        left: 18%;
+        bottom: 23%
+    }
+    64% {
+        transform: rotate(105deg);
+        left: 17.5%;
+        bottom: 20.4%
+    }
+    65% {
+        transform: rotate(106deg);
+        left: 17.5%;
+        bottom: 20.1%
+    }
+
+    65.9%{
+        opacity: 1
+    }
+    66% {
+        opacity: 0;
+    }
+    99.9% {
+        opacity: 0
+    }
+}
+
+
+
+.logoAnimated {
+    height: 11vh;
+    width: 18vh;
+    background: #333;
+    margin-left: .4vw;
+
+}
+
+.exclamation {
+    width: 9.3%;
+    height: 75%;
+    position: relative;
+    bottom: 56.8%;
+    left: .5%;
+    opacity: .01;
+    animation: rotate 15s linear infinite
+}
+
+.exclamBar {
+    height: 50%;
+    width: 8.4%;
+    background: #333;
+    margin-left: 1%;
+    position: relative;
+    top: 13%;
+
+    animation: bar 15s linear infinite;
+    opacity: 1;
+    transform: rotate(160deg);
+    left: 34.7%;
+    top: 46%
+}
+
+.exclamDot {
+    height: 15%;
+    width: 9.3%;
+    background: #fff;
+    position: relative;
+    top: 17%;
+    left: 0.5%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff;
+    animation: dot 15s linear infinite;
+
+}
+
+.exclamBarGroup {
+    height: 67%;
+    width: 90%;
+    background: #fff;
+    position: relative;
+    top: 6.5%;
+    margin-left: 5%;
+    box-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff;
+}
+
+.exclamDotGroup {
+    height: 20.5%;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    top: 11%;
+    left: 0.5%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff;
+
+}
+
 header {
-    background: hsl(43,86%,94%);
+    background: #333;
     height: 13vh;
     width: 100vw;
 }
@@ -8,7 +354,8 @@ header {
     display: flex;
     font-family: 'Squada One', cursive;
     font-size: 11vh;
-    color: hsl(175,58%,39%);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff ;
     margin-left: 5vw;
 
 }
@@ -21,6 +368,7 @@ header {
 .signedOutFrame {
     height: 84vh;
     background: hsl(43,86%,94%);
+
 }
 
 .topHalf {
@@ -30,12 +378,14 @@ header {
 
 #prompt {
     width: 20%;
-    border: .5vw solid hsl(44,41%,88%);
     font-family: 'Squada One', cursive;
-    background: hsl(43,86%,94%);
+    background: #333;
 }
 
 #prompt h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 , 0 0 70px #00ffc3 , 0 0 80px #00fff6 , 0 0 100px #00e9ff ;
     font-family: 'Squada One', cursive;
     font-size: 9vh;
 }
@@ -44,7 +394,10 @@ header {
     font-family: 'Squada One', cursive;
     font-size: 4vh;
     margin: 1vh 0;
-    color: hsl(359,53%,56%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,136,10,1) , 0 0 20px rgba(255,180,61,1) , 0 0 30px rgba(249,120,0,1) , 0 0 40px #ff8300 , 0 0 70px #f99e00 , 0 0 80px #fc8200 , 0 0 100px #d67900 ;
+
 }
 
 #codingBlock {
@@ -77,7 +430,10 @@ footer {
 .CodeMirror {
     height: 72vh;
     font-family: 'Squada One', cursive;
-    background: hsl(43,86%,94%);
+    background: #333;
+    letter-spacing: .2vw;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 , 0 0 70px #00ffc3 , 0 0 80px #00fff6 , 0 0 100px #00e9ff ;
 }
 
 .signOnForm {
@@ -132,7 +488,9 @@ footer {
     height: 98%;
     border: .5vw solid hsl(44,41%,88%);
     margin: 0;
-    background: hsl(43,86%,94%);
+    background: #333;
+    color: #eee;
+    text-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 , 0 0 70px #00ffc3 , 0 0 80px #00fff6 , 0 0 100px #00e9ff ;
 }
 
 .cm-string {
@@ -171,3 +529,47 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.cm-s-solarized .cm-variable {
+    color: #fff;
+}
+
+.cm-s-solarized .cm-keyword {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff ;
+}
+
+.cm-s-solarized .cm-def {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,136,10,1) , 0 0 20px rgba(255,180,61,1) , 0 0 30px rgba(249,120,0,1) , 0 0 40px #ff8300 , 0 0 70px #f99e00 , 0 0 80px #fc8200 , 0 0 100px #d67900 ;
+}
+
+.cm-s-solarized .cm-string {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(96,255,107,1) , 0 0 20px rgba(61,255,96,1) , 0 0 30px rgba(112,249,130,1) , 0 0 40px #5ff482 , 0 0 70px #63f75b , 0 0 80px #51f77b , 0 0 100px #26bc1e ;
+}
+
+.cm-s-solarized .cm-operator {
+    color: rgb(147, 255, 251);
+    text-shadow: 0 0 10px rgba(10,30,255,1) , 0 0 20px rgba(87,61,255,1) , 0 0 30px rgba(45,0,247,1) , 0 0 40px #0015ff , 0 0 70px #003df7 , 0 0 80px #007cf9 , 0 0 100px #3089ff ;
+}
+
+.cm-s-solarized .cm-property {
+    color: #fff;
+}
+
+.cm-s-solarized .cm-variable-2 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,136,10,1) , 0 0 20px rgba(255,180,61,1) , 0 0 30px rgba(249,120,0,1) , 0 0 40px #ff8300 , 0 0 70px #f99e00 , 0 0 80px #fc8200 , 0 0 100px #d67900 ;
+}
+
+.cm-s-solarized .cm-number {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(234, 255, 10, 1), 0 0 20px rgba(232, 255, 61, 1), 0 0 30px rgba(236, 244, 0, 1), 0 0 40px #faff00, 0 0 70px #f4f400, 0 0 80px #e6f700, 0 0 100px #edff30;
+}
+
+.cm-s-solarized .cm-comment {
+    color: rgba(255,90,61,1);
+    text-shadow: 0 0 10px rgba(255,22,10,1) , 0 0 20px rgba(255,90,61,1) , 0 0 30px rgba(242,24,0,1) , 0 0 40px #ff3200 , 0 0 70px #f22800 , 0 0 80px #f44100 , 0 0 100px #ff6430 ;
+}
+
