@@ -7,7 +7,7 @@
     angular.module('app')
         .component('signedInFrame', {
             controller: function() {
-                console.log('signedIn frame controller is workling')
+                //console.log('signedIn frame controller is workling')
             },
             templateUrl: '/signedInFrame/signedInFrame.html'
         })

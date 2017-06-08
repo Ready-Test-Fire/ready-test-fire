@@ -6,7 +6,7 @@
     angular.module('app')
         .component('signedOutFrame', {
             controller: function() {
-                console.log('signedOut frame controller is workling')
+                //console.log('signedOut frame controller is workling')
             },
             templateUrl: '/signedOutFrame/signedOutFrame.html'
         })
