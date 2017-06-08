@@ -19,12 +19,15 @@
             matchBrackets: true
         })
 
+        ACCESS='3877c854d0e868b16bba9510ce9951bb8f24d562'
+        DEV_ID='190025001047353138383138'
 
 
         function launchRDS() {
+            console.log('Release the kraken!')
             var request = new XMLHttpRequest();
-            var dev_id = process.env.DEV_ID;
-            var access = process.env.ACCESS;
+            var dev_id = DEV_ID;
+            var access = ACCESS;
             var data = 'params=' + 90 + '&access_token=' + access;
             var url = 'https://api.particle.io/v1/devices/' + dev_id + '/setpos/';
             request.open('POST', url, true);
@@ -32,10 +35,11 @@
             request.send(data);
         }
 
-        vm.lockRDS = function() {
+        function lockRDS() {
+            console.log('resetting RDS')
             var request = new XMLHttpRequest();
-            var dev_id = process.env.DEV_ID;
-            var access = process.env.ACCESS;
+            var dev_id = DEV_ID;
+            var access = ACCESS;
             var data = 'params=' + 0 + '&access_token=' + access;
             var url = 'https://api.particle.io/v1/devices/' + dev_id + '/setpos/';
             request.open('POST', url, true);
@@ -56,6 +60,8 @@
         vm.launch = function() {
             $state.go('game', {questionid: Number($stateParams.questionid) + 1})
             launchRDS()
+            setTimeout(lockRDS, 10000)
+
         }
 
         vm.isTrue = function() {
@@ -121,6 +127,9 @@
                 vm.success = failure_count ? false : true;
                 if (vm.success) {
                     $('.launchButton').show()
+                }
+                if (!vm.success) {
+                    $('.failed').show()
                 }
             })
             console.log(mocha.run())
