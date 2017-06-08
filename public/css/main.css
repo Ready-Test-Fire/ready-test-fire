@@ -358,7 +358,7 @@ header {
     font-size: 11vh;
     color: #fff;
     text-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff ;
-    margin-left: 4.5vw;
+    margin-left: 2.5vw;
 
 }
 
@@ -606,4 +606,20 @@ footer {
     width: 69vh;
     margin-top: 24vh;
     transform: rotate(90deg);
+    font-family: 'Squada One', cursive;
+    text-shadow: 0 0 10px rgba(96,255,107,1) , 0 0 20px rgba(61,255,96,1) , 0 0 30px rgba(112,249,130,1) , 0 0 40px #5ff482 , 0 0 70px #63f75b , 0 0 80px #51f77b , 0 0 100px #26bc1e ;
+    box-shadow: 0 0 10px rgba(96,255,107,1) , 0 0 20px rgba(61,255,96,1) , 0 0 30px rgba(112,249,130,1) , 0 0 40px #5ff482 , 0 0 70px #63f75b , 0 0 80px #51f77b , 0 0 100px #26bc1e ;
+    border: 1px solid rgba(96,255,107,1);
+    background: none;
+    font-size: 11vw;
+    outline: 0;
+    color: #333;
+}
+
+.launchButton:focus {
+    outline: 0;
+}
+
+.failed {
+    display: none;
 }
