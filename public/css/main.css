@@ -274,12 +274,14 @@
     }
 }
 
+body {
+    background: #333;
+}
 
 
 .logoAnimated {
     height: 11vh;
     width: 18vh;
-    background: #333;
     margin-left: .4vw;
 
 }
@@ -345,7 +347,7 @@
 }
 
 header {
-    background: #333;
+
     height: 13vh;
     width: 100vw;
 }
@@ -356,7 +358,7 @@ header {
     font-size: 11vh;
     color: #fff;
     text-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff ;
-    margin-left: 5vw;
+    margin-left: 4.5vw;
 
 }
 
@@ -367,7 +369,7 @@ header {
 
 .signedOutFrame {
     height: 84vh;
-    background: hsl(43,86%,94%);
+
 
 }
 
@@ -379,7 +381,7 @@ header {
 #prompt {
     width: 20%;
     font-family: 'Squada One', cursive;
-    background: #333;
+
 }
 
 #prompt h1 {
@@ -402,7 +404,7 @@ header {
 
 #codingBlock {
     width:80%;
-    border: .5vw solid hsl(44,41%,88%);
+
     display: flex;
 }
 
@@ -412,11 +414,11 @@ header {
 }
 #signOn {
     width:80%;
-    border: .5vw solid hsl(44,41%,88%);
+
 }
 footer {
-    background: hsl(43,86%,94%);
-    color: hsl(359,53%,56%);
+    color: rgba(255,90,61,1);
+    text-shadow: 0 0 10px rgba(255,22,10,1) , 0 0 20px rgba(255,90,61,1) , 0 0 30px rgba(242,24,0,1) , 0 0 40px #ff3200 , 0 0 70px #f22800 , 0 0 80px #f44100 , 0 0 100px #ff6430 ;
     text-align: center;
     font-family: 'Squada One', cursive;
     height: 3vh;
@@ -445,17 +447,22 @@ footer {
 
 .signOnForm h1 {
     font-size: 11vh;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1) , 0 0 30px rgba(243,113,252,1) , 0 0 40px #f760d6 , 0 0 70px #f95cef , 0 0 80px #f452f9 , 0 0 100px #d582ff ;
 }
 .tutorial {
     font-family: 'Squada One', cursive;
-    font-size: 4vh;
+    font-size: 4.5vh;
     margin-left: 2vh;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(96,255,107,1) , 0 0 20px rgba(61,255,96,1) , 0 0 30px rgba(112,249,130,1) , 0 0 40px #5ff482 , 0 0 70px #63f75b , 0 0 80px #51f77b , 0 0 100px #26bc1e ;
 }
 
 .signOnButton {
     font-family: 'Squada One', cursive;
     font-size: 4vh;
-    background: hsl(175,58%,39%);
+    background: rgba(99,202,249,1);
+    box-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 , 0 0 70px #00ffc3;
     border: none;
     border-radius: 10px;
     margin-top: 2vh;
@@ -470,13 +477,16 @@ footer {
     padding: 5px 10px;
     background: none;
     background-image: none;
-    border: 1px solid #a0b3b0;
-    color: hsl(45,100%,35%);
+    font-family: 'Squada One', cursive;
+    border: 1px solid rgba(99,202,249,1);
+    color: #fff;
     border-radius: 0;
-    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-    transition: border-color .25s ease, box-shadow .25s ease;
+    box-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 , 0 0 70px #00ffc3;
 }
 
+.signOnForm label {
+    color: #fff;
+}
 .signOnForm input:focus {
     outline: 0;
     border-color: #87BA8D;
