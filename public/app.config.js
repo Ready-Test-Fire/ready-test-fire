@@ -6,7 +6,7 @@
 
     angular.module('app').config(config)
 
-    config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider']
+    config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$routeProvider']
 
     function config($stateProvider, $urlRouterProvider, $locationProvider){
 
@@ -20,6 +20,10 @@
             .state('game', {
                 url: '/start/:questionid',
                 component: 'signedInFrame'
+            })
+            .state('retry', {
+                url: '/retry/:questionid',
+                component: 'retryFrame'
             })
         // etc...
     }

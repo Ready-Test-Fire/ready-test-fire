@@ -381,7 +381,16 @@ header {
 #prompt {
     width: 20%;
     font-family: 'Squada One', cursive;
+    color: #fff;
 
+}
+
+#prompt p{
+    margin-top: 2vh;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 4vh;
+    text-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 ;
 }
 
 #prompt h1 {
@@ -542,6 +551,8 @@ footer {
     display: block;
     text-align: center;
     font-size: 6vh;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,96,226,1) , 0 0 20px rgba(255,61,209,1)  ;
 }
 
 .submitArea {
@@ -622,4 +633,48 @@ footer {
 
 .failed {
     display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 7;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #333;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid rgba(255,90,61,1);
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    font-size: 23vh;
+    color: rgba(255,90,61,1);
+    text-shadow: 0 0 10px rgba(255,22,10,1) , 0 0 20px rgba(255,90,61,1) , 0 0 30px rgba(242,24,0,1) , 0 0 40px #ff3200 , 0 0 70px #f22800 , 0 0 80px #f44100 , 0 0 100px #ff6430 ;
+    box-shadow: 0 0 10px rgba(255,22,10,1) , 0 0 20px rgba(255,90,61,1) , 0 0 30px rgba(242,24,0,1) , 0 0 40px #ff3200 , 0 0 70px #f22800 , 0 0 80px #f44100 , 0 0 100px #ff6430 ;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

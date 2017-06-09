@@ -7,7 +7,7 @@
 
 
 
-    function codingBlockController($state, $stateParams) {
+    function codingBlockController($state, $stateParams, LevelService) {
         const vm = this
         vm.success
 
@@ -75,91 +75,97 @@
 
 
 
-        vm.runTest = function() {
-            //Number($stateParams.questionid)
-            var testCode = editor.getValue()
-            let testInfo = returnTestInfo(Number($stateParams.questionid))
-            let obj = {prompt: testInfo[0], test: testInfo[1], answer: testInfo[2], code: testCode}
-            let json = JSON.stringify(obj);
-
-            $.post('/test', {json}).then(function(data){
-                console.log("in controller.");
-                console.log(data);
-                if(data.charAt(1) === "E" || data.charAt(1) === undefined){
-                    console.log("error");
-                    vm.success = "false"
-                } else if(data.charAt(1) === "F"){
-                    console.log("fail");
-                    vm.success = "false"
-                    $(".failed").show()
-                } else if(data.charAt(1) === "P"){
-                    console.log("pass")
-                    //vm.success = "true"
-                    $(".launchButton").show()
-                }
-            })
-        }
-
-        // vm.runTest = function () {
+        // vm.runTest = function() {
+        //     //Number($stateParams.questionid)
         //     var testCode = editor.getValue()
-        //     var test = new Function(testCode)
-        //     var should = chai.should();
-        //     $('#mocha').html('')
-        //     mocha.setup('bdd');
-        //     // console.log('mocha', mocha)
-        //     if (Number($stateParams.questionid) === 1) {
-        //         describe('test', function() {
+        //     let testInfo = returnTestInfo(Number($stateParams.questionid))
+        //     let obj = {prompt: testInfo[0], test: testInfo[1], answer: testInfo[2], code: testCode}
+        //     let json = JSON.stringify(obj);
         //
-        //             it("string set properly", function() {
-        //                 // expect(test()).to.eq("This Works!")
-        //                 test().should.equal("This Works!");
-        //
-        //             })
-        //         })
-        //     } else if (Number($stateParams.questionid) === 2) {
-        //         testCode = editor.getValue()
-        //         try {
-        //             eval(testCode)
-        //         }
-        //         catch (e) {
-        //             // error
-        //         }
-        //
-        //         should = chai.should()
-        //         var expect = chai.expect
-        //         $('#mocha').html('')
-        //         mocha.setup('bdd')
-        //         describe('sum', function() {
-        //
-        //             it("should return 0 if the input is empty", function() {
-        //
-        //                 expect(sum([])).to.equal(0)
-        //             })
-        //
-        //             it("sums the integers in the array", function() {
-        //
-        //                 // expect(sum([2])).to.equal(2)
-        //                 sum([2,4]).should.equal(6)
-        //                 sum([2,4,6]).should.equal(12)
-        //                 sum([2,4,6,8]).should.equal(20)
-        //                 sum([2,4,6,8,10,]).should.equal(30)
-        //             })
-        //         })
-        //     }
-        //
-        //     // mocha.run()
-        //     // let stats = mocha.run()['stats']
-        //
-        //     mocha.run(function(failure_count) {
-        //         vm.success = failure_count ? false : true;
-        //         if (vm.success) {
-        //             $('.launchButton').show()
+        //     $.post('/test', {json}).then(function(data){
+        //         console.log("in controller.");
+        //         console.log(data);
+        //         if(data.charAt(1) === "E" || data.charAt(1) === undefined){
+        //             console.log("error");
+        //             vm.success = "false"
+        //         } else if(data.charAt(1) === "F"){
+        //             console.log("fail");
+        //             vm.success = "false"
+        //             modal.style.display = "block";
+        //         } else if(data.charAt(1) === "P"){
+        //             console.log("pass")
+        //             //vm.success = "true"
+        //             $(".launchButton").show()
         //         }
         //     })
-        //     console.log(mocha.run())
-        //
-        //
         // }
+
+        vm.runTest = function () {
+            var testCode = editor.getValue()
+            var test = new Function(testCode)
+            var should = chai.should();
+            $('#mocha').html('')
+            mocha.setup('bdd');
+            console.log('mocha', mocha)
+            if (Number($stateParams.questionid)%10 === 1) {
+                describe('test', function() {
+
+                    it("string set properly", function() {
+                        // expect(test()).to.eq("This Works!")
+                        test().should.equal("This Works!");
+
+                    })
+                })
+            } else if (Number($stateParams.questionid)%10 === 2) {
+                testCode = editor.getValue()
+                try {
+                    eval(testCode)
+                }
+                catch (e) {
+                    // error
+                }
+
+                should = chai.should()
+                var expect = chai.expect
+                $('#mocha').html('')
+                mocha.setup('bdd')
+                describe('sum', function() {
+
+                    it("should return 0 if the input is empty", function() {
+
+                        expect(sum([])).to.equal(0)
+                    })
+
+                    it("sums the integers in the array", function() {
+
+                        // expect(sum([2])).to.equal(2)
+                        sum([2,4]).should.equal(6)
+                        sum([2,4,6]).should.equal(12)
+                        sum([2,4,6,8]).should.equal(20)
+                        sum([2,4,6,8,10,]).should.equal(30)
+                    })
+                })
+
+            }
+
+            // mocha.run()
+            // let stats = mocha.run()['stats']
+
+            mocha.run(function(failure_count) {
+                vm.success = failure_count ? false : true;
+                if (vm.success) {
+                    $('.launchButton').show()
+                }
+                if (!vm.success) {
+                    modal.style.display = "block"
+                }
+            })
+            console.log(mocha.run())
+
+
+        }
+
+
 
         vm.runSumTest = function() {
 
@@ -205,6 +211,31 @@
                     break;
             }
             return [prompt, test, answer]
+        }
+
+        // Get the modal
+        var modal = document.getElementById('failModal');
+
+// Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            console.log('passing', Number($stateParams.questionid))
+            LevelService.setLevel(Number($stateParams.questionid))
+            window.location.reload()
+        }
+
+// When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                console.log('reloading')
+                window.location.reload();
+            }
         }
 
 

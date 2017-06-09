@@ -13,7 +13,7 @@
         vm.isSet = function(id) {
 
 
-            return id === Number($stateParams.questionid)
+            return id === Number($stateParams.questionid)%10
         }
     }
 
