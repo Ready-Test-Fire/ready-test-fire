@@ -101,8 +101,13 @@
         // }
 
         vm.runTest = function () {
-            var testCode = editor.getValue()
-            var test = new Function(testCode)
+            testCode = editor.getValue()
+            try {
+                eval(testCode)
+            }
+            catch (e) {
+                // error
+            }
             var should = chai.should();
             $('#mocha').html('')
             mocha.setup('bdd');
@@ -112,7 +117,7 @@
 
                     it("string set properly", function() {
                         // expect(test()).to.eq("This Works!")
-                        test().should.equal("This Works!");
+                        test().should.equal("Release the Kraken!");
 
                     })
                 })
@@ -146,6 +151,33 @@
                     })
                 })
 
+            } else if (Number($stateParams.questionid)%10 === 3) {
+                console.log('testing 3')
+                testCode = editor.getValue()
+                try {
+                    eval(testCode)
+                }
+                catch (e) {
+                    // error
+                }
+
+                should = chai.should()
+                var expect = chai.expect
+                $('#mocha').html('')
+                mocha.setup('bdd')
+
+
+                describe('doubleNumbers', function() {
+
+                    it("should return an empty array when the input is empty", function() {
+                        doubleNumbers([]).should.equal(0)
+                    })
+
+                    it("should double every number in the array", function() {
+                        doubleNumbers([1,2,3]).should.equal([2,4,6])
+                        doubleNumbers([10,20,30,40]).should.equal([20,40,60,80])
+                    })
+                })
             }
 
             // mocha.run()
