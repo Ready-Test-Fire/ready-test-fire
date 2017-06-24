@@ -6,7 +6,7 @@
 
     angular.module('app').config(config)
 
-    config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$routeProvider']
+    config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider']
 
     function config($stateProvider, $urlRouterProvider, $locationProvider){
 

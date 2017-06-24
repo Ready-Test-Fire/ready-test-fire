@@ -8,6 +8,10 @@ var port = 3000;
 
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
+
+app.use('*', function(req, res, next) {
+    res.sendFile('index.html', {root: path.join(__dirname, 'public')})
+})
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
