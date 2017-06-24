@@ -678,3 +678,45 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+.subjects {
+    font-family: 'Squada One', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+.subjects a{
+    margin-top: 2vh;
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 4vh;
+    text-shadow: 0 0 10px rgba(99,202,249,1) , 0 0 20px rgba(34,215,247,1) , 0 0 30px rgba(71,137,224,1) , 0 0 40px #00ffd8 ;
+}
+
+.slot
+{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: #404647;
+    border-top: 5px solid #353A3B;
+    border-radius: 2px;
+}
+
+.slot:after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 60%;
+    height: 10px;
+    margin: -5px 0 0;
+    background: #17191A;
+    border-radius: 5px;
+    box-shadow: inset 0 -5px #222526;
+}
