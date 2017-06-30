@@ -18,14 +18,14 @@ https://www.youtube.com/watch?v=xptgLGl9HiQ
 * [AngularJS](https://angularjs.org/) - front end template
 * [Docker](https://www.docker.com/) - Container for tests
 * [AWS](https://aws.amazon.com/) - Backend server
-* [Photon](https://www.particle.io/) - IOT device
+
 
 
 
 ## Authors
 
 * George Flauta - (github)(tech,tech,tech)
-* Keith Davis - (github)(tech,tech,tech)
+* Keith Davis - (https://github.com/kpdavis)(Photon, testing, Device Prototype)
 * Tom Jones - (github)(tech,tech,tech)
 * Jordan Fred - (github)(tech,tech,tech)
 * Lee Robinson - (https://github.com/lrobinsonco)(testing)
