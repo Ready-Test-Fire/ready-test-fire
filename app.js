@@ -7,6 +7,7 @@ var http = require('http');
 var port = 3000;
 
 app.use(express.static('public'));
+app.use(express.static(__dirname));
 app.use(express.static('node_modules'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
