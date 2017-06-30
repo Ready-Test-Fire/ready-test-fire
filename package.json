@@ -14,7 +14,7 @@
     "angular": "^1.6.4",
     "angular-modal-service": "^0.12.1",
     "angular-route": "^1.6.4",
-    "angular-ui-router": "^1.0.3",
+    "@uirouter/angularjs": "^1.0.3",
     "body-parser": "^1.17.2",
     "chai": "^4.0.2",
     "express": "^4.15.3",
