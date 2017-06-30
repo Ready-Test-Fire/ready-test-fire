@@ -30,7 +30,7 @@ app.post('/test', function(req, res){
 
 })
 
-app.use('*', function(req, res, next) {
+app.use('/*', function(req, res, next) {
     res.sendFile('index.html', {root: path.join(__dirname, 'public')})
 })
 
