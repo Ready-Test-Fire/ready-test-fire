@@ -4,7 +4,7 @@ const path = require('path')
 const bodyParser = require('body-parser');
 const exec = require('child_process').exec
 var http = require('http');
-var port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
